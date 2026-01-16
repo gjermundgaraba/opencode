@@ -252,6 +252,7 @@ function App() {
           })
         local.model.set({ providerID, modelID }, { recent: true })
       }
+      if (args.variant) local.model.variant.set(args.variant)
       if (args.sessionID) {
         route.navigate({
           type: "session",
